@@ -1,0 +1,64 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./desafio3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Desafio 3</title>
+</head>
+
+<body>
+<h1 class="titulo">Qual formação você gostaria de se aprofundar?</h1>
+    <div class="combo">
+        <select name="escolha" id="combo" onchange="escolha()">
+            <option value="escolha1">Escolha uma opção</option>
+            <option value="front">Front-End</option>
+            <option value="back">Back-End</option>
+        </select>
+    </div>
+    <div class="formacao formacao__visible" id="formacao" onchange="formacao()">
+        <div class="front" id="formacao-front">
+            <select name="" id="front">
+                <option value="escolha2">Escolha</option>
+                <option value="react">React</option>
+                <option value="vue">Vue</option>
+            </select>
+        </div>
+        <div class="back" id="formacao-back">
+            <select name="" id="back">
+                <option value="escolha3">Escolha</option>
+                <option value="c+">C#</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+    </div>
+    <div class="escolha escolha__visible" id="escolha">
+        <div class="escolha__back">
+            <div class="escolha__back-c">
+                <p>Você escolheu a formação em Back: C+</p>
+                <p>C++ é uma linguagem de programação compilada multi-paradigma e de uso geral</p>
+            </div>
+            <div class="escolha__back-java">
+                <p>Você escolheu a formação em Back: Java</p>
+                <p>Java é uma linguagem de programação orientada a objetos</p>
+            </div>
+        </div>
+        <div class="escolha__front">
+            <div class="escolha__front-react">
+                <p>Você escolheu a formação em Front: React</p>
+                <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em
+                    páginas web</p>
+            </div>
+            <div class="escolha__front-vue">
+                <p>Você escolheu a formação em Front: Vue.js</p>
+                <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário
+                    e aplicativos de página única</p>
+            </div>
+        </div>
+    </div>
+    <script src="./desafio3.js"></script>
+</body>
+
+</html>
